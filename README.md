@@ -13,7 +13,9 @@ An end-to-end MATLAB toolkit for completely unsupervised Speaker Diarization usi
  2. Download the dependencies by clicking the links next to names of toolkits mentioned below. They are all MATLAB codes and only need to be added to the MATLAB path. It runs smoothly on MATLAB 2013+
  
      i. Voicebox <http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.zip>
+
      ii. A speech/music discriminator based on RMS and zero-crossings <http://www.mathworks.com/matlabcentral/fileexchange/submissions/42092/v/7/download/zip>
+     
      iii. MSR Identity toolbox <http://ftp.research.microsoft.com/downloads/2476c44a-1f63-4fe0-b805-8c2de395bb2c/MSR%20Identity%20Toolkit%20v1.0.zip?>
  
  
