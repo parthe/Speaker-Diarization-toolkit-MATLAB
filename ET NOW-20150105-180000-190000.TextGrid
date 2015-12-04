@@ -1,0 +1,182 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 600.82
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Mary" 
+        xmin = 0 
+        xmax = 600.82 
+        intervals: size = 42
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.8 
+            text = "s1" 
+        intervals [2]:
+            xmin = 3.8 
+            xmax = 5.62 
+            text = "NS" 
+        intervals [3]:
+            xmin = 5.62 
+            xmax = 5.9 
+            text = "s1" 
+        intervals [4]:
+            xmin = 5.9 
+            xmax = 8.64 
+            text = "NS" 
+        intervals [5]:
+            xmin = 8.64 
+            xmax = 8.81 
+            text = "s1" 
+        intervals [6]:
+            xmin = 8.81 
+            xmax = 10.06 
+            text = "NS" 
+        intervals [7]:
+            xmin = 10.06 
+            xmax = 12.75 
+            text = "s1" 
+        intervals [8]:
+            xmin = 12.75 
+            xmax = 123.46 
+            text = "s2" 
+        intervals [9]:
+            xmin = 123.46 
+            xmax = 175.65 
+            text = "s2" 
+        intervals [10]:
+            xmin = 175.65 
+            xmax = 274.45 
+            text = "s3" 
+        intervals [11]:
+            xmin = 274.45 
+            xmax = 380.46 
+            text = "s3" 
+        intervals [12]:
+            xmin = 380.46 
+            xmax = 397.37 
+            text = "s7" 
+        intervals [13]:
+            xmin = 397.37 
+            xmax = 399.17 
+            text = "NS" 
+        intervals [14]:
+            xmin = 399.17 
+            xmax = 399.3 
+            text = "s7" 
+        intervals [15]:
+            xmin = 399.3 
+            xmax = 401 
+            text = "NS" 
+        intervals [16]:
+            xmin = 401 
+            xmax = 421.3 
+            text = "s7" 
+        intervals [17]:
+            xmin = 421.3 
+            xmax = 421.31 
+            text = "s4" 
+        intervals [18]:
+            xmin = 421.31 
+            xmax = 422.72 
+            text = "NS" 
+        intervals [19]:
+            xmin = 422.72 
+            xmax = 429.27 
+            text = "s4" 
+        intervals [20]:
+            xmin = 429.27 
+            xmax = 431.15 
+            text = "NS" 
+        intervals [21]:
+            xmin = 431.15 
+            xmax = 440.4 
+            text = "s4" 
+        intervals [22]:
+            xmin = 440.4 
+            xmax = 441.52 
+            text = "NS" 
+        intervals [23]:
+            xmin = 441.52 
+            xmax = 443.88 
+            text = "s4" 
+        intervals [24]:
+            xmin = 443.88 
+            xmax = 446.05 
+            text = "NS" 
+        intervals [25]:
+            xmin = 446.05 
+            xmax = 446.89 
+            text = "s4" 
+        intervals [26]:
+            xmin = 446.89 
+            xmax = 449.28 
+            text = "NS" 
+        intervals [27]:
+            xmin = 449.28 
+            xmax = 449.86 
+            text = "s4" 
+        intervals [28]:
+            xmin = 449.86 
+            xmax = 450.87 
+            text = "NS" 
+        intervals [29]:
+            xmin = 450.87 
+            xmax = 454.26 
+            text = "s4" 
+        intervals [30]:
+            xmin = 454.26 
+            xmax = 456.79 
+            text = "NS" 
+        intervals [31]:
+            xmin = 456.79 
+            xmax = 456.81 
+            text = "s4" 
+        intervals [32]:
+            xmin = 456.81 
+            xmax = 457.86 
+            text = "NS" 
+        intervals [33]:
+            xmin = 457.86 
+            xmax = 462.36 
+            text = "s4" 
+        intervals [34]:
+            xmin = 462.36 
+            xmax = 465.07 
+            text = "NS" 
+        intervals [35]:
+            xmin = 465.07 
+            xmax = 465.77 
+            text = "s4" 
+        intervals [36]:
+            xmin = 465.77 
+            xmax = 487.59 
+            text = "s5" 
+        intervals [37]:
+            xmin = 487.59 
+            xmax = 502.05 
+            text = "s6" 
+        intervals [38]:
+            xmin = 502.05 
+            xmax = 502.06 
+            text = "s7" 
+        intervals [39]:
+            xmin = 502.06 
+            xmax = 503.62 
+            text = "NS" 
+        intervals [40]:
+            xmin = 503.62 
+            xmax = 531.12 
+            text = "s7" 
+        intervals [41]:
+            xmin = 531.12 
+            xmax = 534.39 
+            text = "NS" 
+        intervals [42]:
+            xmin = 534.39 
+            xmax = 600.82 
+            text = "s7" 
