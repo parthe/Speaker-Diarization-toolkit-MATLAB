@@ -1,4 +1,4 @@
-debug_filename = [filepath filename];
+debug_filename = [file_path 'Output_files' filesep  filename];
 
 T = cell(length(original)+1,1);
 for k = 1:length(labels)

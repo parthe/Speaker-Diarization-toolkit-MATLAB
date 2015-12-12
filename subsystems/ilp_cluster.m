@@ -3,7 +3,7 @@ tic
 WCCN = load('TIMIT_WCCN_75');
         
 %     load('G:\Parthe\Dropbox\Acads\DDP\Demo\ivectors','segment_IVs')
-    load([file_path filename filesep 'ivectors'],'segment_IVs')
+    load([file_path 'Output_files' filesep  filename filesep 'ivectors'],'segment_IVs')
 
     D = zeros(length(segment_IVs));
     for i = 1:length(D)-1
@@ -14,15 +14,15 @@ WCCN = load('TIMIT_WCCN_75');
     D = D + transpose(D);
     
 %     save('G:\Parthe\Dropbox\Acads\DDP\Demo\distances','D')
-    save([file_path filename filesep 'distances'],'D')
+    save([file_path 'Output_files' filesep  filename filesep 'distances'],'D')
 
 %% Cluster ILP on ivectors distances
 
         
 %     load('G:\Parthe\Dropbox\Acads\DDP\Demo\distances','D')
-    save([file_path filename filesep 'distances'],'D')
+    save([file_path 'Output_files' filesep  filename filesep 'distances'],'D')
     labels = new_ilp(D,75);
     
 %     save('G:\Parthe\Dropbox\Acads\DDP\Demo\cluster_output','labels')
-    save([file_path filename filesep 'cluster_output'],'labels')
+    save([file_path 'Output_files' filesep  filename filesep 'cluster_output'],'labels')
 disp(['ILP Speaker clustering complete. Time taken = ' num2str(toc)])

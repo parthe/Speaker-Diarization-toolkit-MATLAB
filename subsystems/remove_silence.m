@@ -38,12 +38,12 @@ while(percent_change > 1)
 end
 
 % save('G:\Parthe\Dropbox\Acads\DDP\Demo\silence_removal_LL','LLsp','LLnsp')
-save([file_path filename filesep 'silence_removal_LL'],'LLsp','LLnsp')
+save([file_path  'Output_files' filesep filename filesep 'silence_removal_LL'],'LLsp','LLnsp')
 % Continuity constraint
 min_length = 100;
 L = LLsp - LLnsp;
 [J_start,J_stop] = SAD_boolind2array(L<0,min_length);
 
 % save('G:\Parthe\Dropbox\Acads\DDP\Demo\silence_removal_1000ms','J_start','J_stop')
-save([file_path filename filesep 'silence_removal_1000ms'],'J_start','J_stop')
+save([file_path 'Output_files' filesep filename filesep 'silence_removal_1000ms'],'J_start','J_stop')
 disp(['Silence removal complete. Time taken = ' num2str(toc)])

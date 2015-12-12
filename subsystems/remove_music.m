@@ -5,7 +5,7 @@ tic
 nG.nnG = 16;     nG.snG = 32;
 
 % load('G:\Parthe\Dropbox\Acads\DDP\Demo\silence_removal_1000ms','J_start','J_stop');
-load([file_path filename filesep 'silence_removal_1000ms'],'J_start','J_stop')
+load([file_path 'Output_files' filesep  filename filesep 'silence_removal_1000ms'],'J_start','J_stop')
 
 [sig,fs]=audioread(wav_filename);
 classif = trmszc(wav_filename,0,[0 (length(sig)/fs)]);
@@ -71,11 +71,11 @@ end
 
 T = times;
 % save('G:\Parthe\Dropbox\Acads\DDP\Demo\music_removal_LL','LLsp','LLnsp','T')
-save([file_path filename filesep 'music_removal_LL'],'LLsp','LLnsp','T')
+save([file_path  'Output_files' filesep filename filesep 'music_removal_LL'],'LLsp','LLnsp','T')
 
 % Continuity constraint
 % A = load('G:\Parthe\Dropbox\Acads\DDP\Demo\silence_removal_1000ms','J_start','J_stop');
-A = load([file_path filename filesep 'silence_removal_1000ms'],'J_start','J_stop');
+A = load([file_path 'Output_files' filesep  filename filesep 'silence_removal_1000ms'],'J_start','J_stop');
 min_length = 100;
 [J_start,J_stop] = SAD_boolind2array(LLnsp>LLsp,min_length);
 temp = T(J_start);
@@ -83,6 +83,6 @@ J_start = sort([temp(:); A.J_start(:)])';
 temp = T(J_stop);
 J_stop = sort([temp(:); A.J_stop(:)])';
 % save('G:\Parthe\Dropbox\Acads\DDP\Demo\music_removal_1000ms','J_start','J_stop')
-save([file_path filename filesep 'music_removal_1000ms'],'J_start','J_stop')
+save([file_path  'Output_files' filesep filename filesep 'music_removal_1000ms'],'J_start','J_stop')
 disp(['Music removal complete. Time taken = ' num2str(toc)])
 

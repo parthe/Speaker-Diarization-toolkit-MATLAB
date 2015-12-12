@@ -9,7 +9,7 @@ wav_filename = [file_path 'Data_Files' filesep filename '.wav'];
 
 S = melcepst(sig,Fs,'0',n_MFCC, floor(3*log(Fs)) ,frame_length * Fs, frame_hop * Fs);
 
-MFCC{1} = S;
-mkdir([file_path filename ])
-save([file_path filename filesep 'MFCC'],'MFCC')
+MFCC{1} = S; clear S;
+mkdir([file_path  'Output_files' filesep  filename ])
+save([file_path  'Output_files' filesep  filename filesep 'MFCC'],'MFCC')
 disp(['Feature extraction complete. Time taken = ' num2str(toc)])

@@ -1,15 +1,21 @@
 file_path = [pwd filesep];
+% file_path should read something like 
+% <your_home_folder_>.../Speaker-Diarization-toolkit-MATLAB/
+
 filename = 'BLOOMBERG TV-20150105-180000-190000';
 
 % Feature Extraction
-extract_MFCC
+run([file_path 'subsystems' filesep 'extract_MFCC.m'])
 
 % Speech Activity Detection
-remove_silence
-remove_music
+
+run([file_path 'subsystems' filesep 'remove_silence.m'])
+run([file_path 'subsystems' filesep 'remove_music.m'])
+
+
 
 % Speaker Segmentation
-detect_speaker_change
+run([file_path 'subsystems' filesep 'detect_speaker_change.m'])
 
 % % Training UBM
 % train_UBM
@@ -22,8 +28,10 @@ detect_speaker_change
 % compute_WCCN
 
 % Speaker Clustering
-extract_ivectors
-ilp_cluster
+run([file_path 'subsystems' filesep 'extract_ivectors.m'])
+run([file_path 'subsystems' filesep 'ilp_cluster.m'])
+
+
 
 % View Diarization output on PRAAT TextGrid
-debug_textgrid
+run([file_path 'subsystems' filesep 'debug_textgrid.m']);

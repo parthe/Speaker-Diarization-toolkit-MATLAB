@@ -3,13 +3,13 @@ tic
 DBIC_mode = 1;
 lamda = 10;
 thresh = 2000;
-
+    load([file_path  'Output_files' filesep  filename filesep 'MFCC'],'MFCC')
     S = MFCC{1};
     times = (1:length(S))';
     
     % load SAD results
 %     load('G:\Parthe\Dropbox\Acads\DDP\Demo\music_removal_1000ms','J_start','J_stop')
-    load([file_path filename filesep 'music_removal_1000ms'],'J_start','J_stop')
+    load([file_path 'Output_files' filesep filename filesep 'music_removal_1000ms'],'J_start','J_stop')
     
     % remove non-speech frames for concatenation
     non_speech_indices = SAD_array2ind(J_start,J_stop);
@@ -24,20 +24,20 @@ thresh = 2000;
     
     % save frame number of change points
 %     save('G:\Parthe\Dropbox\Acads\DDP\Demo\segmentation_2000_1','original')
-    save([file_path filename filesep 'segmentation'],'original')
+    save([file_path  'Output_files' filesep filename filesep 'segmentation'],'original')
 
 
     % load feature vectors
     S = MFCC{1};
     
     % load SAD results
-    load([file_path filename filesep 'music_removal_1000ms'],'J_start','J_stop')
+    load([file_path  'Output_files' filesep filename filesep 'music_removal_1000ms'],'J_start','J_stop')
     non_speech_indices = SAD_array2ind(J_start,J_stop);
     S(non_speech_indices,:) =  inf*ones(length(non_speech_indices),size(S,2));
     
     % load segmentation results
 %     load('G:\Parthe\Dropbox\Acads\DDP\Demo\segmentation_2000_1','original')
-    load([file_path filename filesep 'segmentation'],'original')
+    load([file_path 'Output_files' filesep  filename filesep 'segmentation'],'original')
     C = original;
     
     segments = cell(length(C) + 1,1);
@@ -62,5 +62,5 @@ thresh = 2000;
     
     % save segments
 %     save('G:\Parthe\Dropbox\Acads\DDP\Demo\segments','segments')
-    save([file_path filename filesep 'segments'],'segments')
+    save([file_path 'Output_files' filesep  filename filesep 'segments'],'segments')
 disp(['Speaker segmentation complete. Time taken = ' num2str(toc)])
