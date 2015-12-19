@@ -22,3 +22,4 @@ An end-to-end MATLAB toolkit for completely unsupervised Speaker Diarization usi
  
  
  This system was developped by Parthe Pandit as part of his Masters thesis. It is a Speaker Diarization system designed for segmention Broadcast News Audios. For details, please have a look at the following thesis. <THESIS LINK>
+3. Cite the following Thesis in your work <http://www.slideshare.net/ParthePandit/parthepandit10d070009ddpthesis-53767213>
