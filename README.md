@@ -17,6 +17,8 @@ An end-to-end MATLAB toolkit for completely unsupervised Speaker Diarization usi
      ii. A speech/music discriminator based on RMS and zero-crossings <http://www.mathworks.com/matlabcentral/fileexchange/submissions/42092/v/7/download/zip>
      
      iii. MSR Identity toolbox <http://ftp.research.microsoft.com/downloads/2476c44a-1f63-4fe0-b805-8c2de395bb2c/MSR%20Identity%20Toolkit%20v1.0.zip?>
+     
+     iv. Cluster Toolbox (Purdue) <https://engineering.purdue.edu/~bouman/software/cluster/cluster-matlab/gaussmix-v1.2.zip>
  
  
  This system was developped by Parthe Pandit as part of his Masters thesis. It is a Speaker Diarization system designed for segmention Broadcast News Audios. For details, please have a look at the following thesis. <THESIS LINK>
